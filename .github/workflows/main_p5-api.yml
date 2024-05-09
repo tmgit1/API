@@ -32,6 +32,17 @@ jobs:
         working-directory: 'src'
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
+      - name: black
+        run: |
+          black --check .
+
+      - name: ruff
+        run: |
+          ruff check .
+
+      - name: Run tests
+        run: |
+          pytest tests/
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v3
