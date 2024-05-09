@@ -26,7 +26,7 @@ if st.button("Get Answer"):
 # Bouton pour appeler l'API
 if st.button("Say Hello"):
     # Envoi une requête POST à l'API endpoint ("/greet")
-    response = requests.post(url="https://p5-api.azurewebsites.net")
+    response = requests.get(url="https://p5-api.azurewebsites.net")
 
     if response.status_code == 200:
         # Affiche le message
