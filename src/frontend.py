@@ -11,7 +11,7 @@ question = st.text_input("Enter your question:")
 if st.button("Get Answer"):
     # Envoie une requête POST l'API endpoint (/predict) avec la question de l'utilisateur
     response = requests.post(
-        url="http://127.0.0.1:8000/predict", json={"sentence": question}
+        url="https://p5-api.azurewebsites.net/predict", json={"sentence": question}
     )
     if response.status_code == 200:
         # Extrait la réponse de l'API
@@ -26,7 +26,7 @@ if st.button("Get Answer"):
 # Bouton pour appeler l'API
 if st.button("Say Hello"):
     # Envoi une requête POST à l'API endpoint ("/greet")
-    response = requests.post(url="http://127.0.0.1:8000/greet")
+    response = requests.post(url="https://p5-api.azurewebsites.net/")
 
     if response.status_code == 200:
         # Affiche le message
