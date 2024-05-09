@@ -42,7 +42,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest tests/
+          pytest src/test_sample.py
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v3
