@@ -1,4 +1,4 @@
-from src.sentence_prediction import process_sentence, from_str_to_list, tags
+from utils.sentence_prediction import process_sentence, from_str_to_list, tags
 
 
 def test_process_sentence():
