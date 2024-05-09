@@ -1,7 +1,7 @@
 import tensorflow_hub as hub
 
-#use_loaded_model = hub.load("src/universal_sentence_encoder_model »)
-#module_url = "src/utils/model"
+# use_loaded_model = hub.load("src/universal_sentence_encoder_model »)
+# module_url = "src/utils/model"
 
 # module_url ="https://tfhub.dev/google/universal-sentence-encoder/4"
 # use_loaded_model = hub.load(module_url)
@@ -23,6 +23,7 @@ def download_model():
 
     return model
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     model = download_model()
     print("main download completed.")

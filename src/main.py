@@ -6,11 +6,7 @@ from utils.setup_model import download_model
 from utils.model_trained import model_prediction
 from utils.sentence_prediction import process_sentence, from_str_to_list, tags
 
-app = FastAPI(
-    title="FastAPI3",
-    description="Hello API developer!",
-    version="0.1.0"
-)
+app = FastAPI(title="FastAPI3", description="Hello API developer!", version="0.1.0")
 
 model = download_model()
 

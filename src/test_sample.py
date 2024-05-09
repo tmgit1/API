@@ -3,8 +3,8 @@ from src.sentence_prediction import process_sentence, from_str_to_list, tags
 
 def test_process_sentence():
     assert (
-            process_sentence("Should i learn html, or css ?")
-            == "should i learn html or css "
+        process_sentence("Should i learn html, or css ?")
+        == "should i learn html or css "
     )
 
 
