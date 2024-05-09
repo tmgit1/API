@@ -13,7 +13,7 @@ model = download_model()
 
 @app.get("/")
 async def main():
-    return {"message": "Hello World !"}
+    return {"message": "Hello World"}
 
 
 @app.post("/predict")
